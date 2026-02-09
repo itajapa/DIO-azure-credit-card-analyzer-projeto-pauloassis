@@ -68,7 +68,9 @@ DOCS/
 ```bash
 git clone https://github.com/itajapa/DIO-azure-credit-card-analyzer-projeto-pauloassis.git
 cd DIO-azure-credit-card-analyzer-projeto-pauloassis
+
 2️⃣ Criar e ativar ambiente virtual
+
 python -m venv .venv
 Windows
 
@@ -78,9 +80,11 @@ Linux / macOS
 source .venv/bin/activate
 
 3️⃣ Instalar as dependências
+
 pip install -r src/requirements.txt
 
 4️⃣ Configurar variáveis de ambiente
+
 Crie um arquivo .env na raiz do projeto com base no arquivo .env.example, preenchendo as credenciais do Azure:
 
 ENDPOINT=
@@ -90,13 +94,16 @@ CONTAINER_NAME=
 ⚠️ Nunca versionar o arquivo .env
 
 5️⃣ Executar a aplicação
+
 streamlit run src/app.py
 A aplicação será aberta automaticamente no navegador.
 
 🔐 Segurança
+
 As credenciais do Azure não são versionadas no repositório.
 O projeto utiliza variáveis de ambiente e o arquivo .env está protegido via .gitignore, seguindo boas práticas de segurança.
 
 📜 Autor
+
 Paulo Assis
 Projeto desenvolvido para fins educacionais na plataforma DIO.me
